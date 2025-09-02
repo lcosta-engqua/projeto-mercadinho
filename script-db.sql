@@ -1,0 +1,3 @@
+DROP DATABASE if EXISTS mercadinho;
+CREATE DATABASE IF NOT EXISTS mercadinho;
+

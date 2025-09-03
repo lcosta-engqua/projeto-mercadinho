@@ -20,21 +20,24 @@
     include_once 'buscar-categorias.php';
 
     $marcas = listarMarcas();
-    echo '<select name="marcas" required>';
-      echo '<option value="marcas">selecione uma marca</option>';
+    echo '<select name="marca" required>';
+      echo '<option value="marca">selecione uma marca</option>';
       foreach ($marcas as $marca) {
         echo '<option value="' . $marca['id'] . '">' . $marca['nome'] . '</option>';
       }
     echo '</select>';
 
     $categorias = listarCategorias();
-    echo '<select name="categorias" required>';
-      echo '<option value="categorias">selecione uma categoria</option>';
+    echo '<select name="categoria" required>';
+      echo '<option value="categoria">selecione uma categoria</option>';
       foreach ($categorias as $categoria) {
         echo '<option value="' . $categoria['id'] . '">' . $categoria['nome'] . '</option>';
       }
     echo '</select>';
     ?>
+
+    <label for="preco">Preço</label>
+    <input type="text" name="preco" id="preco">
 
     <button type="submit">Cadastrar</button>
   </form>

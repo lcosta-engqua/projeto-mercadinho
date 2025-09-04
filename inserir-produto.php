@@ -23,8 +23,8 @@ function inserirProduto(){
   $categoria = $_SESSION['categoriaProduto'];
   $preco_custo = $_SESSION['precoProduto'];
 
-  print_r($_SESSION);
-  print_r([$nome, $descricao, $marca, $categoria, $preco_custo]);
+  // print_r($_SESSION);
+  // print_r([$nome, $descricao, $marca, $categoria, $preco_custo]);
 
   $stmt = $conn->prepare("INSERT INTO produtos(nome, descricao, marcar_id, categoria_id, preco_custo) VALUES(?, ?, ?, ?, ?)");
   $stmt->execute([$nome, $descricao, $marca, $categoria, $preco_custo]);

@@ -6,6 +6,9 @@
   <title>Cadastro de Categoria</title>
 </head>
 <body>
-  <form action=""></form>
+  <form action="inserir-categoria.php" method="post">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" placeholder="nome da categoria">
+  </form>
 </body>
 </html>
